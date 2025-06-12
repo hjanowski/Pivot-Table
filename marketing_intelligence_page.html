@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Intelligence - Data Pipelines</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="header-left">
+            <div class="salesforce-logo">
+                <i class="fas fa-cloud"></i>
+            </div>
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search..." class="search-input">
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-icons">
+                <i class="fas fa-th"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-question-circle"></i>
+                <i class="fas fa-cog"></i>
+                <i class="fas fa-bell"></i>
+                <div class="user-avatar">T</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="nav-left">
+            <div class="app-switcher">
+                <i class="fas fa-th"></i>
+            </div>
+            <div class="app-title">Marketing Intelligence</div>
+        </div>
+        <div class="nav-menu">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">Goals</a>
+            <a href="#" class="nav-item">Marketing Analytics</a>
+            <a href="#" class="nav-item active">Data Management</a>
+            <a href="#" class="nav-item">Dashboards <i class="fas fa-chevron-down"></i></a>
+            <a href="#" class="nav-item">Reports <i class="fas fa-chevron-down"></i></a>
+            <a href="#" class="nav-item">Data Model</a>
+            <a href="#" class="nav-item">Semantic Layer</a>
+        </div>
+        <div class="nav-right">
+            <i class="fas fa-pencil-alt"></i>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>Data Management</h3>
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <i class="fas fa-stream"></i>
+                        Data Pipelines
+                    </li>
+                    <li>
+                        <i class="fas fa-database"></i>
+                        Data Enrichment
+                    </li>
+                    <li>
+                        <i class="fas fa-pattern"></i>
+                        Patterns
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-header">
+                <div class="page-title">
+                    <i class="fas fa-stream page-icon"></i>
+                    <h1>Data Pipelines</h1>
+                </div>
+                <button class="new-pipeline-btn">New Pipeline</button>
+            </div>
+
+            <div class="content-meta">
+                <span class="item-count">21 items</span>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search..." class="table-search">
+                    <button class="refresh-btn">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Data Table -->
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th class="sortable">
+                                Name <i class="fas fa-sort"></i>
+                            </th>
+                            <th class="sortable">
+                                Data Space <i class="fas fa-sort"></i>
+                            </th>
+                            <th class="sortable">
+                                Source <i class="fas fa-sort"></i>
+                            </th>
+                            <th class="sortable">
+                                Status <i class="fas fa-sort"></i>
+                            </th>
+                            <th class="sortable">
+                                Last Run Status <i class="fas fa-sort"></i>
+                            </th>
+                            <th class="sortable">
+                                Last Run <i class="fas fa-sort"></i>
+                            </th>
+                            <th class="sortable">
+                                Next Run <i class="fas fa-sort"></i>
+                            </th>
+                            <th class="sortable">
+                                Last Data Date <i class="fas fa-sort"></i>
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="pipelineTableBody">
+                        <!-- Table rows will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
